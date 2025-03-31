@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      if (localStorage.getItem("loggedIn") !== "true") {
+          alert("You must log in first!");
+          window.location.href = "login.html"; // Redirect to login page
+      }
+  </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>🧁| Ice cooler</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">Ice<span>Junction</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+    <!--  <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about us">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li> 
+      </ul> -->
+              
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="more.html">Menu</a></li>
+                <li><a href="about.html">AboutUs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+      
+   <!--   <div class="nav__btns">
+        <button class="btn"><i class="ri-shopping-cart-line"></i></button>
+        <button class="btn"><i class="ri-notification-3-fill"></i></button>
+      </div>-->
+    </nav>
+
+    <header id="home">
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>WELCOME TO OUR <span>JUNCTION</span></h1>
+        <p class="section__description">
+          Indulge in a delightful journey of flavors! Discover creamy, delicious
+          ice creams crafted to bring joy to every scoop. Welcome to your sweet
+          escape!
+        </p>
+        <div class="header__btn">
+          <button class="btn">Scoop Now</button>
+        </div>
+        <div class="social__icons">
+          <!--<a href="https://www.facebook.com/" ><i class="ri-facebook-fill"></i></a>-->
+          <a href="https://twitter.com/" ><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.pinterest.com/" ><i class="fab fa-pinterest"></i></a>
+          <a href="https://wa.me/?text=Visit+Ice+Junction!" ><i class="fab fa-whatsapp"></i></a>
+      </div>
+      </div>
+    </header>
+
+ <section class="section__container popular__container" id="menu">
+      <h2 class="section__header">Popular Coolers</h2>
+      <div class="popular__grid">
+          <!-- Card 1 -->
+          <div class="popular__card">
+              <img src="assets/popular-1.png" alt="Mango Tango Sorbet" />
+              <div class="popular__card__content">
+                  <h4>Mango Tango Sorbet</h4>
+                  <h3>Rs 75</h3>
+              </div>
+          </div>
+          <!-- Card 2 -->
+         <div class="popular__card">
+              <img src="assets/popular-2.png" alt="Chocolate Fudge Delight" />
+              <div class="popular__card__content">
+                  <h4>Chocolate Fudge Delight</h4>
+                  <h3>Rs 110</h3>
+              </div>
+          </div> 
+          <!-- Card 3 -->
+         <div class="popular__card">
+              <img src="assets/popular-3.png" alt="Strawberry Swirl Bliss" />
+              <div class="popular__card__content">
+                  <h4>Strawberry Swirl Bliss</h4>
+                  <h3>Rs 90</h3>
+              </div>
+          </div>
+      </div>
+  </section> 
+  
+  <div class="header__btn">
+    <a href="more.html">
+        <button class="btn" id="explore-btn">Explore More</button>
+    </a>
+</div>
+
+    </section>
+
+    <section class="section__container discover__container" id="categories">
+      <h2 class="section__header">Most Selling Coolers</h2>
+      <p class="section__description">
+        Discover our crowd favorites! These ice creams are loved by everyone and
+        have become the top picks for their irresistible flavors and creamy
+        textures.
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <img src="assets/discover-1.jpg" alt="discover" />
+          <div class="discover__card__content">
+            <h4>Double Chocolate Crunch</h4>
+            <p class="section__description">
+              Dive into a chocolate lover's paradise with our Double Chocolate
+              Crunch. This rich and creamy ice cream is made with premium cocoa
+              and blended with crunchy chocolate chunks to deliver a perfect
+              balance of smoothness and texture.
+            </p>
+            <h3>
+              Rs 100 <span><s>Rs 125</s></span>
+            </h3>
+            <div class="discover__card__btn">
+              <button class="btn">Scoop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="discover__card">
+          <img src="assets/discover-2.jpg" alt="discover" />
+          <div class="discover__card__content">
+            <h4>Strawberry Cheesecake Bliss</h4>
+            <p class="section__description">
+              Experience the perfect harmony of fruity and creamy with our
+              Strawberry Cheesecake Bliss. Every spoonful feels like enjoying a
+              slice of fresh strawberry cheesecake, making it an irresistible
+              dessert.
+            </p>
+            <h3>
+              Rs 130 <span><s> Rs 145</s></span>
+            </h3>
+            <div class="discover__card__btn">
+              <button class="btn">Scoop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="discover__card">
+          <img src="assets/discover-3.jpg" alt="discover" />
+          <div class="discover__card__content">
+            <h4>Classic Cookies and Cream</h4>
+            <p class="section__description">
+              Savor the timeless charm of our Classic Cookies and Cream ice
+              cream. Made with velvety smooth vanilla ice cream, it is
+              generously packed with chunks of chocolate cookies to create a
+              delightful crunch in every bite.
+            </p>
+            <h3>
+              Rs 125 <span><s> Rs 150</s></span>
+            </h3>
+            <div class="discover__card__btn">
+              <button class="btn">Scoop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="banner__image"></div>
+      <div class="banner__content">
+        <h2 class="section__header">
+          Get Yummy Ice-Cream at a Reasonable Price
+        </h2>
+        <p class="section__description">
+          Treat yourself to delightful ice creams without breaking the bank!
+          Enjoy premium quality and mouthwatering flavors at prices that make
+          every scoop worth it.
+        </p>
+        <div class="banner__flex">
+          <div class="banner__card">
+            <img src="assets/banner-1.png" alt="banner" />
+            <h4>Fresh & Natural</h4>
+          </div>
+          <div class="banner__card">
+            <img src="assets/banner-2.png" alt="banner" />
+            <h4>Quick Packaging</h4>
+          </div>
+          <div class="banner__card">
+            <img src="assets/banner-3.png" alt="banner" />
+            <h4>Fast Delivery</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container subscribe__container" id="contact">
+      <div class="subscribe__content">
+        <h2 class="section__header">Subscribe For Discounts</h2>
+        <p class="section__description">
+          Don't miss out on sweet deals! Subscribe now to receive exclusive
+          discounts and updates on our latest ice cream flavors and special
+          offers.
+        </p>
+        <form action="/">
+          <input type="text" placeholder="Type Your Email" />
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="#" class="logo">Ice<span>World</span></a>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <ul class="socials">
+            <div class="social__icons">
+              <!--<a href="https://www.facebook.com/" ><i class="ri-facebook-fill"></i></a>-->
+              <a href="https://twitter.com/" ><i class="fab fa-x-twitter"></i></a>
+              <a href="https://www.pinterest.com/" ><i class="fab fa-pinterest"></i></a>
+              <a href="https://wa.me/?text=Visit+Ice+Junction!" ><i class="fab fa-whatsapp"></i></a>
+          </div>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Ice Junction. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

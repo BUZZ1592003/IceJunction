@@ -1,0 +1,256 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #080710;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.13);
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            height: 45px;
+            margin-top: 8px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        ::placeholder {
+            color: #ccc;
+        }
+
+        button {
+            margin-top: 30px;
+            width: 100%;
+            height: 50px;
+            background-color: #ffffff;
+            color: #080710;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        .account {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .account a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .account a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h3>Login</h3>
+
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit" id="submit_btn">Log In</button>
+        </form>
+
+        <span class="account">Don't have an account? <a href="signup.html">Click here</a></span>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ✅ Add Background Image */
+        body {
+            background: url('assets/log3.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.13);
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            height: 45px;
+            margin-top: 8px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        ::placeholder {
+            color: #ccc;
+        }
+
+        button {
+            margin-top: 30px;
+            width: 100%;
+            height: 50px;
+            background-color: #ffffff;
+            color: #080710;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        .account {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .account a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .account a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h3>Login</h3>
+
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit" id="submit_btn">Log In</button>
+        </form>
+
+        <span class="account">Don't have an account? <a href="signup.html">Click here</a></span>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
